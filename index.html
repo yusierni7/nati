@@ -10,9 +10,8 @@ layout: null
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
-<meta name="juicyads-site-verification" content="2d4ba0080f1cade99514f4f7c342a0bd">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
     <script>
     (function() {
         var hostname = location.hostname;
@@ -24,10 +23,10 @@ layout: null
         };
         var displayDomain = formatText(fullName);
         window.__SITE_NAME__ = displayDomain;
-        document.title = displayDomain + " · Watch Free";
+        document.title = displayDomain + " — The Vault · Curated Adult Stories";
         var metaDesc = document.querySelector("meta[name=\"description\"]") || document.createElement("meta");
         metaDesc.name = "description";
-        metaDesc.content = "Watch free amateur clips from Nusantara and across Asia. New videos added daily. Adults only 18+.";
+        metaDesc.content = "Atikah — The Vault. An editorial collection of curated adult stories from Nusantara and across Asia. Intimate, unfiltered, artful. 18+ only.";
         if (!metaDesc.parentNode) document.head.appendChild(metaDesc);
         var canonical = document.querySelector("link[rel=\"canonical\"]") || document.createElement("link");
         canonical.setAttribute("rel", "canonical");
@@ -47,78 +46,107 @@ layout: null
         *,*::before,*::after{box-sizing:border-box}
 
         :root {
-            --bg: #0f0a0c;
-            --bg-2: #1a1114;
-            --surface: #1f1518;
-            --surface-2: #2a1d21;
-            --surface-3: #352428;
-            --text: #fdf5f2;
-            --text-dim: #a89088;
-            --text-muted: #786860;
-            --border: rgba(255,200,180,.08);
-            --border-strong: rgba(255,200,180,.18);
-            --accent: #f43f5e;
-            --accent-2: #f59e0b;
-            --accent-soft: rgba(244,63,94,.15);
-            --play-bg: rgba(15,10,12,.75);
-            --play-fg: #fdf5f2;
-            --dur-bg: rgba(15,10,12,.95);
-            --dur-fg: #ffffff;
-            --header-bg: rgba(15,10,12,.95);
-            --menu-bg: #140c10;
+            --bg: #12100e;
+            --bg-2: #1a1714;
+            --surface: #1f1a16;
+            --surface-2: #262019;
+            --cream: #f5efe6;
+            --paper: #ebe3d5;
+            --ink: #1a1512;
+            --text: #f0e9df;
+            --text-dim: #a89a87;
+            --text-muted: #766a5c;
+            --border: rgba(240,230,215,.1);
+            --border-strong: rgba(240,230,215,.2);
+            --brick: #c73e1d;
+            --brick-soft: rgba(199,62,29,.15);
+            --olive: #6b7c4c;
+            --gold: #d4a574;
+            --gold-soft: rgba(212,165,116,.15);
+            --header-bg: rgba(18,16,14,.94);
+            --menu-bg: #1a1714;
         }
 
         body.light-mode {
-            --bg: #ffffff;
-            --bg-2: #f9f9f9;
+            --bg: #f5efe6;
+            --bg-2: #ebe3d5;
             --surface: #ffffff;
-            --surface-2: #f2f2f2;
-            --surface-3: #e8e8e8;
-            --text: #0f0f0f;
-            --text-dim: #606060;
-            --text-muted: #909090;
-            --border: rgba(0,0,0,.08);
-            --border-strong: rgba(0,0,0,.16);
-            --accent: #e11d48;
-            --accent-2: #d97706;
-            --accent-soft: rgba(225,29,72,.1);
-            --play-bg: rgba(0,0,0,.75);
-            --play-fg: #ffffff;
-            --dur-bg: rgba(0,0,0,.85);
-            --dur-fg: #ffffff;
-            --header-bg: rgba(255,255,255,.98);
-            --menu-bg: #ffffff;
+            --surface-2: #f0e9dd;
+            --text: #1a1512;
+            --text-dim: #6a5a4a;
+            --text-muted: #9a8a76;
+            --border: rgba(26,21,18,.1);
+            --border-strong: rgba(26,21,18,.2);
+            --brick: #a83615;
+            --brick-soft: rgba(168,54,21,.1);
+            --gold: #b8895a;
+            --gold-soft: rgba(184,137,90,.12);
+            --header-bg: rgba(245,239,230,.96);
+            --menu-bg: #f5efe6;
         }
 
         html{overflow-x:hidden;background:var(--bg);scroll-behavior:smooth}
         body{
             width:100%;min-width:320px;max-width:100%;margin:0;padding:0;
             background:var(--bg);color:var(--text);
-            font-family:'Inter',system-ui,-apple-system,sans-serif;
-            line-height:1.4;-webkit-font-smoothing:antialiased;
+            font-family:'Lora',Georgia,serif;
+            line-height:1.6;-webkit-font-smoothing:antialiased;
             transition:background .3s ease,color .3s ease;
         }
 
         svg{display:block}
 
-        /* ============ HEADER ============ */
+        /* ============ MASTHEAD ============ */
         .site-header{
             position:fixed;top:0;left:0;right:0;z-index:1000;
             background:var(--header-bg);
-            backdrop-filter:blur(24px);
-            -webkit-backdrop-filter:blur(24px);
+            backdrop-filter:blur(20px);
+            -webkit-backdrop-filter:blur(20px);
             border-bottom:1px solid var(--border);
-            padding:8px 12px;
-            height:56px;
         }
         .header-inner{
-            display:flex;align-items:center;gap:8px;
-            max-width:1920px;margin:0 auto;
-            height:100%;
+            max-width:1600px;margin:0 auto;
+            padding:14px 20px 12px;
         }
-
+        .masthead-row{
+            display:flex;align-items:center;justify-content:space-between;
+            gap:12px;
+        }
+        .masthead-brand{
+            display:flex;flex-direction:column;
+            text-decoration:none;color:var(--text);
+            min-width:0;
+        }
+        .masthead-name{
+            font-family:'Playfair Display',Georgia,serif;
+            font-size:28px;
+            font-weight:900;
+            letter-spacing:.02em;
+            line-height:1;
+            color:var(--text);
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            text-transform:uppercase;
+        }
+        .masthead-tagline{
+            font-family:'Inter',sans-serif;
+            font-size:9.5px;
+            font-weight:600;
+            letter-spacing:.28em;
+            text-transform:uppercase;
+            color:var(--gold);
+            margin-top:4px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .masthead-actions{
+            display:flex;align-items:center;gap:4px;
+            flex-shrink:0;
+        }
         .icon-btn{
-            width:40px;height:40px;flex-shrink:0;
+            width:40px;height:40px;
             background:transparent;border:none;
             border-radius:50%;cursor:pointer;padding:0;
             display:flex;align-items:center;justify-content:center;
@@ -126,404 +154,854 @@ layout: null
         }
         .icon-btn:hover{background:var(--surface-2)}
         .icon-btn:active{transform:scale(.94)}
-        .icon-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-
-        .brand{
-            display:flex;align-items:center;gap:8px;
-            flex:1;
-            text-decoration:none;
-            color:var(--text);
-            padding:0 8px;
-            min-width:0;
-        }
-        .brand-mark{
-            width:32px;height:32px;flex-shrink:0;
-            border-radius:8px;
-            background:linear-gradient(135deg,var(--accent),var(--accent-2));
-            display:flex;align-items:center;justify-content:center;
-            color:#fff;font-weight:900;font-size:14px;
-            font-family:'Fraunces',serif;
-            box-shadow:0 2px 12px var(--accent-soft);
-        }
-        .brand-name{
-            font-family:'Fraunces',serif;
-            font-size:18px;
-            font-weight:900;
-            letter-spacing:-.03em;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow:ellipsis;
-            color:var(--text);
-        }
-        .brand-tag{
-            font-size:9px;
-            font-weight:600;
-            letter-spacing:.14em;
-            text-transform:uppercase;
-            color:var(--text-dim);
-            margin-left:2px;
-            align-self:flex-start;
-            margin-top:2px;
-            display:none;
-        }
-        @media(min-width:700px){ .brand-tag{display:inline} }
-
-        .header-actions{
-            display:flex;align-items:center;gap:4px;
-            flex-shrink:0;
+        .icon-btn svg{
+            width:20px;height:20px;
+            stroke:currentColor;fill:none;stroke-width:1.8;
+            stroke-linecap:round;stroke-linejoin:round;
         }
         .lang-btn{
-            min-width:44px;height:40px;
+            min-width:50px;height:40px;
             background:transparent;border:none;
-            border-radius:50px;cursor:pointer;padding:0 10px;
-            display:flex;align-items:center;justify-content:center;gap:5px;
+            border-radius:20px;cursor:pointer;padding:0 12px;
+            display:flex;align-items:center;justify-content:center;gap:6px;
             color:var(--text);transition:all .2s ease;
-            font-family:inherit;
-            font-size:11px;font-weight:800;letter-spacing:.05em;
+            font-family:'Inter',sans-serif;
+            font-size:10px;font-weight:800;letter-spacing:.14em;
         }
         .lang-btn:hover{background:var(--surface-2)}
         .lang-btn svg{
-            width:18px;height:18px;
-            stroke:currentColor;fill:none;stroke-width:2;
+            width:16px;height:16px;
+            stroke:currentColor;fill:none;stroke-width:1.8;
             stroke-linecap:round;stroke-linejoin:round;
-            color:var(--accent);
+            color:var(--gold);
         }
 
-        @media(max-width:500px){
-            .brand-name{font-size:16px}
+        /* Issue date bar */
+        .issue-bar{
+            display:flex;align-items:center;justify-content:space-between;
+            gap:12px;
+            margin-top:12px;padding-top:10px;
+            border-top:1px solid var(--border);
+            font-family:'Inter',sans-serif;
+            font-size:10px;
+            font-weight:600;
+            letter-spacing:.15em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+        }
+        .issue-bar-left{display:flex;align-items:center;gap:14px}
+        .issue-bar .dot{
+            width:3px;height:3px;border-radius:50%;
+            background:var(--text-muted);
+        }
+        .issue-bar .highlight{color:var(--brick)}
+
+        @media(max-width:600px){
+            .masthead-name{font-size:22px}
+            .masthead-tagline{font-size:8.5px;letter-spacing:.24em}
+            .issue-bar{font-size:9px;gap:8px}
+            .issue-bar-left{gap:8px}
         }
 
-        /* ============ MENU DRAWER ============ */
-        .menu-overlay{
-            position:fixed;inset:0;z-index:1050;
-            background:rgba(0,0,0,.5);
-            opacity:0;pointer-events:none;
-            transition:opacity .3s ease;
-        }
-        .menu-overlay.open{opacity:1;pointer-events:auto}
-
+        /* ============ MENU PANEL ============ */
         .menu-panel{
-            position:fixed;top:0;left:0;bottom:0;z-index:1100;
-            width:240px;max-width:85vw;
+            position:fixed;top:0;right:0;bottom:0;z-index:1100;
+            width:100%;max-width:420px;
             background:var(--menu-bg);
-            transform:translateX(-100%);
-            transition:transform .3s cubic-bezier(.4,0,.2,1);
-            display:flex;flex-direction:column;overflow:hidden;
-            border-right:1px solid var(--border);
+            transform:translateX(100%);
+            transition:transform .38s cubic-bezier(.4,0,.2,1);
+            display:flex;flex-direction:column;
+            overflow:hidden;
+            border-left:1px solid var(--border-strong);
+            box-shadow:-20px 0 60px rgba(0,0,0,.5);
         }
         .menu-panel.open{transform:translateX(0)}
 
         .menu-head{
             flex-shrink:0;
-            padding:16px;
+            display:flex;align-items:center;justify-content:space-between;
+            padding:20px 24px;
             border-bottom:1px solid var(--border);
-            display:flex;align-items:center;gap:10px;
+            background:var(--menu-bg);
         }
-        .menu-head-mark{
-            width:32px;height:32px;border-radius:8px;
-            background:linear-gradient(135deg,var(--accent),var(--accent-2));
-            display:flex;align-items:center;justify-content:center;
-            color:#fff;font-weight:900;font-size:14px;
-            font-family:'Fraunces',serif;
-            flex-shrink:0;
-        }
-        .menu-head-text{display:flex;flex-direction:column;min-width:0}
+        .menu-head-title{display:flex;flex-direction:column;gap:4px}
         .menu-head-name{
-            font-family:'Fraunces',serif;
-            font-size:15px;font-weight:900;color:var(--text);
-            letter-spacing:-.02em;line-height:1.2;
-            white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+            font-family:'Playfair Display',serif;
+            font-size:20px;font-weight:900;
+            letter-spacing:.02em;
+            color:var(--text);
+            text-transform:uppercase;
+            line-height:1;
         }
         .menu-head-sub{
-            font-size:9px;font-weight:700;letter-spacing:.14em;
-            text-transform:uppercase;color:var(--accent);
-            margin-top:2px;line-height:1.2;
+            font-family:'Inter',sans-serif;
+            font-size:9px;font-weight:700;letter-spacing:.22em;
+            text-transform:uppercase;
+            color:var(--gold);
+            line-height:1;
         }
-
+        .menu-close{
+            width:38px;height:38px;border-radius:50%;
+            background:var(--surface);border:1px solid var(--border);
+            cursor:pointer;display:flex;align-items:center;justify-content:center;
+            color:var(--text);padding:0;transition:all .2s ease;
+        }
+        .menu-close:hover{background:var(--surface-2);border-color:var(--border-strong)}
+        .menu-close svg{
+            width:16px;height:16px;
+            stroke:currentColor;fill:none;stroke-width:2;
+            stroke-linecap:round;stroke-linejoin:round;
+        }
         .menu-body{
             flex:1;overflow-y:auto;
-            padding:8px 0 20px;
+            padding:16px 0 32px;
             -webkit-overflow-scrolling:touch;
         }
 
         .menu-link{
-            display:flex;align-items:center;gap:16px;
-            padding:10px 24px;
+            display:flex;align-items:center;gap:14px;
+            padding:12px 24px;
             color:var(--text);text-decoration:none;
-            font-size:14px;font-weight:500;
+            font-family:'Inter',sans-serif;
+            font-size:14px;font-weight:600;
             transition:background .15s ease;
         }
         .menu-link:hover{background:var(--surface-2)}
         .menu-link svg{
-            width:22px;height:22px;
-            stroke:currentColor;fill:none;stroke-width:2;
+            width:18px;height:18px;
+            stroke:currentColor;fill:none;stroke-width:1.8;
             stroke-linecap:round;stroke-linejoin:round;
+            color:var(--gold);
             flex-shrink:0;
         }
 
-        .menu-divider{height:1px;background:var(--border);margin:8px 0}
-
         .menu-section-label{
-            font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
-            color:var(--text-muted);padding:14px 24px 8px;
+            font-family:'Inter',sans-serif;
+            font-size:9px;font-weight:800;letter-spacing:.24em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+            padding:20px 24px 8px;
         }
 
         .menu-legal{display:flex;flex-direction:column}
         .menu-legal details{overflow:hidden}
         .menu-legal summary{
-            padding:10px 24px;cursor:pointer;
-            font-size:13px;font-weight:500;color:var(--text);
-            list-style:none;
-            display:flex;align-items:center;gap:14px;
+            padding:12px 24px;cursor:pointer;
+            font-family:'Inter',sans-serif;
+            font-size:12.5px;font-weight:600;
+            color:var(--text);list-style:none;
+            display:flex;align-items:center;gap:12px;
             user-select:none;transition:background .15s ease;
         }
         .menu-legal summary:hover{background:var(--surface-2)}
         .menu-legal summary::-webkit-details-marker{display:none}
         .menu-legal summary .chev{
-            margin-left:auto;width:8px;height:8px;
-            border-right:2px solid var(--text-dim);
-            border-bottom:2px solid var(--text-dim);
+            margin-left:auto;width:7px;height:7px;
+            border-right:1.5px solid var(--text-dim);
+            border-bottom:1.5px solid var(--text-dim);
             transform:rotate(45deg);transition:transform .25s ease;
             flex-shrink:0;
         }
-        .menu-legal details[open] summary .chev{transform:rotate(-135deg);margin-top:4px}
+        .menu-legal details[open] summary .chev{transform:rotate(-135deg);margin-top:3px}
         .menu-legal-body{
-            padding:4px 24px 16px;
-            font-size:12px;line-height:1.6;color:var(--text-dim);
-            border-left:2px solid var(--accent-soft);
-            margin-left:24px;
+            padding:4px 24px 18px;
+            font-family:'Lora',serif;
+            font-size:12.5px;line-height:1.7;color:var(--text-dim);
         }
-        .menu-legal-body p{margin:8px 0}
+        .menu-legal-body p{margin:10px 0}
         .menu-legal-body p strong{color:var(--text)}
-        .menu-legal-body ul{margin:8px 0;padding-left:16px}
-        .menu-legal-body a{color:var(--accent);text-decoration:none}
+        .menu-legal-body ul{margin:10px 0;padding-left:18px}
+        .menu-legal-body a{color:var(--brick);text-decoration:none;font-weight:500}
         .menu-legal-body a:hover{text-decoration:underline}
 
         .menu-contact-list{list-style:none;padding:0;margin:0}
         .menu-contact-list li{
-            display:flex;align-items:center;gap:14px;
+            display:flex;align-items:center;gap:12px;
+            padding:12px 24px;
+            font-family:'Inter',sans-serif;
             font-size:13px;
-            padding:10px 24px;
         }
         .menu-contact-list .contact-ico{
-            flex-shrink:0;width:22px;height:22px;
-            color:var(--accent);
+            flex-shrink:0;width:32px;height:32px;border-radius:8px;
+            display:flex;align-items:center;justify-content:center;
+            background:var(--brick-soft);
+            color:var(--brick);
         }
         .menu-contact-list .contact-ico svg{
-            width:20px;height:20px;
-            stroke:currentColor;fill:none;stroke-width:2;
+            width:16px;height:16px;
+            stroke:currentColor;fill:none;stroke-width:1.8;
             stroke-linecap:round;stroke-linejoin:round;
         }
         .menu-contact-list .contact-meta{display:flex;flex-direction:column;min-width:0;flex:1}
         .menu-contact-list .contact-label{
-            font-size:10px;text-transform:uppercase;
-            letter-spacing:.1em;color:var(--text-muted);
-            line-height:1.2;font-weight:600;
+            font-size:9px;font-weight:800;
+            text-transform:uppercase;letter-spacing:.14em;
+            color:var(--text-muted);line-height:1.2;
         }
         .menu-contact-list a{
             color:var(--text);text-decoration:none;
-            font-size:12.5px;font-weight:500;
-            margin-top:2px;word-break:break-all;
+            font-size:12.5px;font-weight:600;
+            margin-top:3px;word-break:break-all;
         }
-        .menu-contact-list a:hover{color:var(--accent)}
+        .menu-contact-list a:hover{color:var(--brick)}
 
-        /* ============ ADS ============ */
+        /* ============ SIDEBAR (desktop) ============ */
+        .page-wrap{
+            max-width:1600px;margin:0 auto;
+            padding:0 16px;
+        }
+
+        .layout{
+            display:grid;
+            grid-template-columns:1fr;
+            gap:0;
+        }
+        @media(min-width:900px){
+            .layout{
+                grid-template-columns:200px 1fr;
+                gap:40px;
+            }
+        }
+        @media(min-width:1200px){
+            .layout{
+                grid-template-columns:220px 1fr;
+                gap:56px;
+            }
+        }
+
+        .sidebar{
+            display:none;
+        }
+        @media(min-width:900px){
+            .sidebar{
+                display:block;
+                position:sticky;
+                top:140px;
+                align-self:start;
+                padding:24px 0 40px;
+                max-height:calc(100vh - 160px);
+                overflow-y:auto;
+            }
+        }
+
+        .side-nav-section{
+            margin-bottom:24px;
+        }
+        .side-nav-label{
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:800;
+            letter-spacing:.24em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+            margin-bottom:10px;
+            padding-bottom:8px;
+            border-bottom:1px solid var(--border);
+        }
+        .side-nav-list{
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .side-nav-list li a{
+            display:flex;align-items:center;justify-content:space-between;
+            padding:8px 0;
+            color:var(--text-dim);
+            text-decoration:none;
+            font-family:'Inter',sans-serif;
+            font-size:12.5px;
+            font-weight:500;
+            transition:color .15s ease;
+            letter-spacing:.01em;
+        }
+        .side-nav-list li a:hover{color:var(--brick)}
+        .side-nav-list li a .count{
+            font-size:10px;
+            color:var(--text-muted);
+            font-weight:600;
+            letter-spacing:.05em;
+        }
+        .side-nav-list li.active a{
+            color:var(--text);
+            font-weight:700;
+        }
+        .side-nav-list li.active a::before{
+            content:'';
+            width:3px;height:14px;
+            background:var(--brick);
+            margin-right:10px;
+            border-radius:2px;
+        }
+        .side-nav-list li.active a .count{color:var(--brick)}
+
+        /* ============ MAIN CONTENT ============ */
+        .main-content{
+            padding:20px 0 60px;
+            min-width:0;
+        }
+        @media(min-width:900px){
+            .main-content{padding:32px 0 60px}
+        }
+
+        /* AD */
         .ad-box{
             display:flex;justify-content:center;align-items:center;
             margin:0 auto;max-width:100%;overflow:hidden;
-            min-height:50px;
+            background:var(--surface);min-height:50px;
         }
         .ad-break{
-            padding:8px 0;background:var(--bg);
+            padding:12px 0;
+            border-bottom:1px solid var(--border);
+            margin-bottom:24px;
+        }
+        .ad-break.bottom{
+            border-top:1px solid var(--border);
+            border-bottom:none;margin-top:40px;
+            padding-top:20px;
+        }
+        .ad-inline{
+            margin:40px 0;
+            padding:16px 0;
+            border-top:1px solid var(--border);
             border-bottom:1px solid var(--border);
         }
-        .ad-break:first-child{margin-top:60px}
-        .ad-break.bottom{margin-top:24px;border-top:1px solid var(--border);border-bottom:none}
-        .ad-inline{margin:24px 0}
 
-        /* ============ MAIN LAYOUT ============ */
-        .main-wrap{
-            max-width:1920px;
-            margin:0 auto;
-            padding:16px 16px 40px;
+        /* ============ HERO FEATURE ============ */
+        .hero{
+            margin-bottom:56px;
         }
-        @media(min-width:600px){
-            .main-wrap{padding:16px 24px 40px}
-        }
-        @media(min-width:1200px){
-            .main-wrap{padding:16px 40px 40px}
-        }
-
-        /* ============ SECTION ============ */
-        .section{margin:24px 0}
-        .section:first-child{margin-top:8px}
-
-        .section-head{
-            display:flex;align-items:center;justify-content:space-between;
+        .hero-label{
+            display:flex;align-items:center;gap:12px;
             margin-bottom:16px;
-            gap:12px;
         }
-        .section-title{
-            font-family:'Fraunces',Georgia,serif;
-            font-size:22px;font-weight:900;
-            letter-spacing:-.02em;
-            color:var(--text);margin:0;
-            line-height:1.2;
-            display:flex;align-items:center;gap:8px;
+        .hero-label-line{
+            flex:1;height:1px;
+            background:var(--border-strong);
         }
-        .section-title .section-ico{
-            width:24px;height:24px;
-            stroke:currentColor;fill:none;stroke-width:2;
-            stroke-linecap:round;stroke-linejoin:round;
-            color:var(--accent);
+        .hero-label-text{
+            font-family:'Inter',sans-serif;
+            font-size:10px;
+            font-weight:800;
+            letter-spacing:.28em;
+            text-transform:uppercase;
+            color:var(--brick);
+            white-space:nowrap;
         }
-        .section-count{
-            font-size:12px;font-weight:600;
+        .hero-label-num{
+            font-family:'Playfair Display',serif;
+            font-style:italic;
+            font-size:12px;
             color:var(--text-muted);
+            white-space:nowrap;
         }
 
-        /* ============ YOUTUBE GRID ============ */
-        .grid{
-            display:grid;
-            gap:16px 12px;
-            grid-template-columns:repeat(1,1fr);
-        }
-        @media(min-width:500px){
-            .grid{grid-template-columns:repeat(2,1fr);gap:20px 16px}
-        }
-        @media(min-width:900px){
-            .grid{grid-template-columns:repeat(3,1fr)}
-        }
-        @media(min-width:1300px){
-            .grid{grid-template-columns:repeat(4,1fr)}
-        }
-        @media(min-width:1600px){
-            .grid{grid-template-columns:repeat(5,1fr)}
-        }
-
-        /* ============ YOUTUBE CARD ============ */
-        .card{
+        .hero-card{
             display:block;
             text-decoration:none;
             color:inherit;
-            transition:transform .15s ease;
+            transition:all .3s ease;
         }
-        .card:hover .card-thumb img{transform:scale(1.03)}
-        .card:hover .card-play{opacity:1;transform:translate(-50%,-50%) scale(1)}
-
-        .card-thumb{
+        .hero-media{
             position:relative;
             width:100%;
             aspect-ratio:16/9;
             overflow:hidden;
             background:var(--surface-2);
-            border-radius:12px;
-            margin-bottom:10px;
+            border-radius:4px;
+            margin-bottom:20px;
         }
-        .card-thumb img{
+        @media(min-width:600px){
+            .hero-media{aspect-ratio:2/1}
+        }
+        .hero-media img{
             width:100%;height:100%;object-fit:cover;display:block;
-            transition:transform .3s cubic-bezier(.4,0,.2,1);
+            transition:transform .6s cubic-bezier(.4,0,.2,1);
+        }
+        .hero-card:hover .hero-media img{transform:scale(1.03)}
+
+        .hero-media::after{
+            content:'';
+            position:absolute;inset:0;
+            background:linear-gradient(to top, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 50%);
+            pointer-events:none;
         }
 
-        .card-play{
+        .hero-play{
             position:absolute;
             top:50%;left:50%;
-            width:56px;height:56px;
-            background:var(--play-bg);
-            backdrop-filter:blur(4px);
-            -webkit-backdrop-filter:blur(4px);
+            transform:translate(-50%,-50%);
+            width:72px;height:72px;
+            background:rgba(199,62,29,.9);
+            backdrop-filter:blur(8px);
+            -webkit-backdrop-filter:blur(8px);
             border-radius:50%;
             display:flex;align-items:center;justify-content:center;
-            color:var(--play-fg);
+            color:#fff;
+            z-index:2;
+            transition:all .3s ease;
+            border:2px solid rgba(255,255,255,.2);
+        }
+        .hero-play svg{width:28px;height:28px;fill:currentColor;margin-left:4px}
+        .hero-card:hover .hero-play{
+            background:var(--brick);
+            transform:translate(-50%,-50%) scale(1.08);
+            border-color:rgba(255,255,255,.4);
+        }
+
+        .hero-issue{
+            position:absolute;
+            bottom:16px;left:16px;
+            background:rgba(0,0,0,.7);
+            color:var(--gold);
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:800;
+            letter-spacing:.24em;
+            text-transform:uppercase;
+            padding:6px 12px;
+            border-radius:2px;
+            z-index:2;
+            backdrop-filter:blur(4px);
+        }
+
+        .hero-title{
+            font-family:'Playfair Display',Georgia,serif;
+            font-size:32px;
+            font-weight:900;
+            line-height:1.1;
+            letter-spacing:-.015em;
+            color:var(--text);
+            margin:0 0 14px;
+            max-width:820px;
+        }
+        .hero-card:hover .hero-title{color:var(--brick)}
+        @media(min-width:600px){
+            .hero-title{font-size:40px}
+        }
+        @media(min-width:900px){
+            .hero-title{font-size:48px}
+        }
+
+        .hero-desc{
+            font-family:'Lora',Georgia,serif;
+            font-size:16px;
+            line-height:1.65;
+            color:var(--text-dim);
+            margin:0 0 20px;
+            max-width:720px;
+            font-style:italic;
+        }
+        @media(min-width:600px){
+            .hero-desc{font-size:17px}
+        }
+
+        .hero-meta{
+            display:flex;align-items:center;gap:16px;
+            font-family:'Inter',sans-serif;
+            font-size:11px;
+            font-weight:600;
+            letter-spacing:.14em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+            flex-wrap:wrap;
+        }
+        .hero-meta .dot{
+            width:3px;height:3px;border-radius:50%;
+            background:var(--text-muted);
+        }
+        .hero-meta .tag{
+            color:var(--brick);
+        }
+
+        /* ============ SECTION DIVIDER ============ */
+        .section{
+            margin:56px 0;
+        }
+        .section:first-of-type{margin-top:0}
+
+        .section-head{
+            display:flex;align-items:baseline;justify-content:space-between;
+            gap:16px;
+            margin-bottom:28px;
+            padding-bottom:16px;
+            border-bottom:2px solid var(--border-strong);
+        }
+        .section-title{
+            font-family:'Playfair Display',Georgia,serif;
+            font-size:26px;
+            font-weight:900;
+            font-style:italic;
+            letter-spacing:-.015em;
+            color:var(--text);
+            margin:0;
+            display:flex;align-items:baseline;gap:12px;
+        }
+        .section-title .num{
+            font-family:'Inter',sans-serif;
+            font-size:11px;
+            font-weight:800;
+            letter-spacing:.16em;
+            color:var(--brick);
+            font-style:normal;
+        }
+        @media(min-width:600px){
+            .section-title{font-size:32px}
+        }
+        .section-subtitle{
+            font-family:'Inter',sans-serif;
+            font-size:10px;
+            font-weight:700;
+            letter-spacing:.18em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+            white-space:nowrap;
+        }
+
+        /* ============ EDITORIAL GRID (3:4 portrait cards) ============ */
+        .ed-grid{
+            display:grid;
+            gap:28px 24px;
+            grid-template-columns:repeat(1,1fr);
+        }
+        @media(min-width:500px){
+            .ed-grid{grid-template-columns:repeat(2,1fr);gap:32px 24px}
+        }
+        @media(min-width:900px){
+            .ed-grid{grid-template-columns:repeat(3,1fr);gap:36px 28px}
+        }
+
+        .ed-card{
+            display:block;
+            text-decoration:none;
+            color:inherit;
+            transition:all .3s ease;
+        }
+        .ed-thumb{
+            position:relative;
+            width:100%;
+            aspect-ratio:3/4;
+            overflow:hidden;
+            background:var(--surface-2);
+            border-radius:4px;
+            margin-bottom:14px;
+        }
+        .ed-thumb img{
+            width:100%;height:100%;object-fit:cover;display:block;
+            transition:transform .6s cubic-bezier(.4,0,.2,1);
+            filter:saturate(.9);
+        }
+        .ed-card:hover .ed-thumb img{
+            transform:scale(1.05);
+            filter:saturate(1.1);
+        }
+        .ed-thumb::after{
+            content:'';
+            position:absolute;inset:0;
+            background:linear-gradient(to top, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 40%);
+            opacity:0;
+            transition:opacity .3s ease;
+            pointer-events:none;
+        }
+        .ed-card:hover .ed-thumb::after{opacity:1}
+
+        .ed-play{
+            position:absolute;
+            top:50%;left:50%;
+            transform:translate(-50%,-50%) scale(.85);
+            width:56px;height:56px;
+            background:rgba(199,62,29,.85);
+            backdrop-filter:blur(6px);
+            -webkit-backdrop-filter:blur(6px);
+            border-radius:50%;
+            display:flex;align-items:center;justify-content:center;
+            color:#fff;
             z-index:2;pointer-events:none;
             opacity:0;
-            transform:translate(-50%,-50%) scale(.85);
-            transition:all .2s ease;
+            transition:all .25s ease;
+            border:1.5px solid rgba(255,255,255,.25);
         }
-        .card-play svg{width:24px;height:24px;fill:currentColor;margin-left:3px}
+        .ed-play svg{width:22px;height:22px;fill:currentColor;margin-left:3px}
+        .ed-card:hover .ed-play{
+            opacity:1;
+            transform:translate(-50%,-50%) scale(1);
+        }
 
-        .card-dur{
-            position:absolute;bottom:6px;right:6px;
-            background:var(--dur-bg);
-            color:var(--dur-fg);
-            font-size:11.5px;
-            font-weight:700;
-            padding:2px 5px;
-            border-radius:4px;
-            z-index:3;pointer-events:none;
+        .ed-dur{
+            position:absolute;
+            bottom:10px;right:10px;
+            background:rgba(0,0,0,.8);
+            color:var(--gold);
+            font-family:'Inter',sans-serif;
+            font-size:10px;
+            font-weight:800;
+            letter-spacing:.06em;
+            padding:3px 8px;
+            border-radius:2px;
+            z-index:2;
             font-variant-numeric:tabular-nums;
-            letter-spacing:.02em;
         }
 
-        .card-row{
-            display:flex;gap:12px;
-            padding-right:8px;
+        .ed-cat{
+            display:inline-block;
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:800;
+            letter-spacing:.2em;
+            text-transform:uppercase;
+            color:var(--brick);
+            margin-bottom:8px;
         }
-        .card-avatar{
-            flex-shrink:0;
-            width:36px;height:36px;
-            border-radius:50%;
-            background:linear-gradient(135deg,var(--accent),var(--accent-2));
-            display:flex;align-items:center;justify-content:center;
-            color:#fff;font-weight:900;font-size:15px;
-            font-family:'Fraunces',serif;
-            margin-top:2px;
-        }
-        .card-text{flex:1;min-width:0}
-        .card-title{
-            font-family:'Inter',system-ui,sans-serif;
-            font-size:14px;
-            font-weight:600;
-            line-height:1.35;
+        .ed-title{
+            font-family:'Playfair Display',Georgia,serif;
+            font-size:19px;
+            font-weight:900;
+            line-height:1.25;
+            letter-spacing:-.01em;
             color:var(--text);
-            margin:0 0 3px;
+            margin:0 0 8px;
+            overflow:hidden;
+            display:-webkit-box;
+            -webkit-line-clamp:3;
+            -webkit-box-orient:vertical;
+            text-overflow:ellipsis;
+            transition:color .2s ease;
+        }
+        .ed-card:hover .ed-title{color:var(--brick)}
+        .ed-desc{
+            font-family:'Lora',serif;
+            font-size:13px;
+            line-height:1.55;
+            color:var(--text-dim);
+            margin:0 0 10px;
             overflow:hidden;
             display:-webkit-box;
             -webkit-line-clamp:2;
             -webkit-box-orient:vertical;
             text-overflow:ellipsis;
-            word-break:break-word;
+            font-style:italic;
         }
-        .card-meta{
-            font-size:12px;
-            color:var(--text-dim);
-            line-height:1.4;
+        .ed-meta{
+            font-family:'Inter',sans-serif;
+            font-size:10px;
+            font-weight:600;
+            letter-spacing:.1em;
+            text-transform:uppercase;
+            color:var(--text-muted);
         }
-        .card-meta span{display:inline}
-        .card-meta span + span::before{content:' • ';margin:0 2px}
 
-        @media(max-width:500px){
-            .card-avatar{width:32px;height:32px;font-size:13px}
-            .card-title{font-size:13px}
-            .card-meta{font-size:11.5px}
-            .card-play{width:48px;height:48px;opacity:1;transform:translate(-50%,-50%) scale(1)}
+        /* ============ LIST EDITORIAL (numbered) ============ */
+        .list-ed{
+            display:flex;
+            flex-direction:column;
+            gap:0;
+        }
+        .list-item{
+            display:grid;
+            grid-template-columns:auto 1fr;
+            gap:20px;
+            padding:24px 0;
+            border-bottom:1px solid var(--border);
+            text-decoration:none;
+            color:inherit;
+            transition:all .2s ease;
+        }
+        @media(min-width:600px){
+            .list-item{grid-template-columns:60px 1fr 200px;gap:32px;padding:28px 0}
+        }
+        .list-item:first-child{padding-top:0}
+        .list-item:last-child{border-bottom:none}
+        .list-item:hover .list-title{color:var(--brick)}
+        .list-item:hover .list-thumb img{transform:scale(1.05)}
+
+        .list-num{
+            font-family:'Playfair Display',serif;
+            font-size:28px;
+            font-weight:900;
+            font-style:italic;
+            color:var(--brick);
+            line-height:1;
+            opacity:.85;
+        }
+        @media(min-width:600px){
+            .list-num{font-size:40px}
+        }
+
+        .list-body{min-width:0}
+        .list-cat{
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:800;
+            letter-spacing:.2em;
+            text-transform:uppercase;
+            color:var(--gold);
+            margin-bottom:6px;
+        }
+        .list-title{
+            font-family:'Playfair Display',Georgia,serif;
+            font-size:19px;
+            font-weight:900;
+            line-height:1.25;
+            letter-spacing:-.01em;
+            color:var(--text);
+            margin:0 0 8px;
+            transition:color .2s ease;
+        }
+        @media(min-width:600px){
+            .list-title{font-size:22px}
+        }
+        .list-desc{
+            font-family:'Lora',serif;
+            font-size:13.5px;
+            line-height:1.6;
+            color:var(--text-dim);
+            margin:0 0 10px;
+            font-style:italic;
+            overflow:hidden;
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient:vertical;
+            text-overflow:ellipsis;
+        }
+        .list-meta{
+            font-family:'Inter',sans-serif;
+            font-size:10px;
+            font-weight:600;
+            letter-spacing:.1em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+        }
+
+        .list-thumb{
+            display:none;
+            position:relative;
+            width:200px;
+            aspect-ratio:4/3;
+            overflow:hidden;
+            background:var(--surface-2);
+            border-radius:3px;
+        }
+        @media(min-width:600px){
+            .list-thumb{display:block}
+        }
+        .list-thumb img{
+            width:100%;height:100%;object-fit:cover;display:block;
+            transition:transform .5s cubic-bezier(.4,0,.2,1);
+            filter:saturate(.9);
+        }
+
+        /* ============ MASONRY ARCHIVE ============ */
+        .masonry{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:14px;
+        }
+        @media(min-width:600px){
+            .masonry{grid-template-columns:repeat(3,1fr);gap:20px}
+        }
+        @media(min-width:900px){
+            .masonry{grid-template-columns:repeat(4,1fr);gap:24px}
+        }
+
+        .masonry-item{
+            display:block;
+            text-decoration:none;
+            color:inherit;
+            border-radius:3px;
+            overflow:hidden;
+            position:relative;
+            background:var(--surface-2);
+            transition:all .3s ease;
+            break-inside:avoid;
+        }
+        .masonry-item:nth-child(3n+1){aspect-ratio:3/4}
+        .masonry-item:nth-child(3n+2){aspect-ratio:1/1}
+        .masonry-item:nth-child(3n+3){aspect-ratio:4/5}
+
+        .masonry-item img{
+            width:100%;height:100%;object-fit:cover;display:block;
+            transition:transform .5s cubic-bezier(.4,0,.2,1);
+            filter:saturate(.85);
+        }
+        .masonry-item:hover img{
+            transform:scale(1.08);
+            filter:saturate(1.1);
+        }
+        .masonry-item::after{
+            content:'';
+            position:absolute;inset:0;
+            background:linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.1) 55%, rgba(0,0,0,0) 100%);
+            pointer-events:none;
+        }
+        .masonry-content{
+            position:absolute;
+            bottom:0;left:0;right:0;
+            padding:16px;
+            z-index:2;
+            pointer-events:none;
+        }
+        .masonry-cat{
+            display:inline-block;
+            font-family:'Inter',sans-serif;
+            font-size:8.5px;
+            font-weight:800;
+            letter-spacing:.2em;
+            text-transform:uppercase;
+            color:var(--gold);
+            margin-bottom:6px;
+        }
+        .masonry-title{
+            font-family:'Playfair Display',Georgia,serif;
+            font-size:14px;
+            font-weight:900;
+            line-height:1.3;
+            letter-spacing:-.005em;
+            color:#fff;
+            margin:0 0 4px;
+            overflow:hidden;
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient:vertical;
+            text-overflow:ellipsis;
+        }
+        .masonry-meta{
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:600;
+            letter-spacing:.1em;
+            text-transform:uppercase;
+            color:rgba(255,255,255,.65);
         }
 
         /* ============ PAGINATION ============ */
         .pagination{
             display:flex;justify-content:center;align-items:center;
-            gap:6px;margin:40px 0 20px;flex-wrap:wrap;
+            gap:6px;margin:56px 0 24px;flex-wrap:wrap;
+            padding-top:40px;
+            border-top:1px solid var(--border);
         }
         .pagination a,
         .pagination span{
             display:inline-flex;align-items:center;justify-content:center;
             min-width:40px;height:40px;padding:0 14px;
-            background:var(--surface-2);color:var(--text);
-            border:none;border-radius:20px;
-            font-size:14px;font-weight:600;text-decoration:none;
-            transition:all .15s ease;cursor:pointer;
-            font-family:inherit;
+            background:transparent;color:var(--text);
+            border:none;border-radius:2px;
+            font-family:'Inter',sans-serif;
+            font-size:13px;font-weight:600;
+            text-decoration:none;
+            transition:all .15s ease;
+            cursor:pointer;
         }
-        .pagination a:hover{background:var(--surface-3)}
+        .pagination a:hover{background:var(--surface-2)}
         .pagination .active{
-            background:var(--text);color:var(--bg);
+            background:var(--brick);
+            color:#fff;
         }
         .pagination .disabled{opacity:.3;cursor:not-allowed;pointer-events:none}
-        .pagination .dots{background:transparent;cursor:default;color:var(--text-dim)}
+        .pagination .dots{color:var(--text-muted);cursor:default}
         .pagination .chev-btn{padding:0;min-width:40px}
         .pagination .chev-btn svg{
-            width:18px;height:18px;
-            stroke:currentColor;fill:none;stroke-width:2.5;
+            width:16px;height:16px;
+            stroke:currentColor;fill:none;stroke-width:2;
             stroke-linecap:round;stroke-linejoin:round;
         }
 
@@ -532,65 +1010,135 @@ layout: null
             position:fixed;
             bottom:16px;left:50%;
             transform:translateX(-50%) translateY(20px);
-            max-width:420px;width:calc(100% - 32px);
+            max-width:440px;width:calc(100% - 32px);
             background:var(--surface);color:var(--text);
             border:1px solid var(--border-strong);
-            border-radius:12px;
-            padding:16px 18px;
-            box-shadow:0 12px 40px rgba(0,0,0,.4);
-            font-size:13px;line-height:1.5;
+            border-radius:6px;
+            padding:18px 20px;
+            box-shadow:0 16px 48px rgba(0,0,0,.5);
+            font-family:'Inter',sans-serif;
+            font-size:12.5px;line-height:1.5;
             z-index:1200;
-            display:flex;align-items:center;gap:12px;
+            display:flex;align-items:center;gap:14px;
             opacity:0;
             transition:opacity .3s ease,transform .3s ease;
         }
         .cookie-banner.show{opacity:1;transform:translateX(-50%) translateY(0)}
         .cookie-banner .cookie-ico{
-            flex-shrink:0;width:36px;height:36px;border-radius:50%;
+            flex-shrink:0;width:32px;height:32px;border-radius:4px;
             display:flex;align-items:center;justify-content:center;
-            background:var(--accent-soft);color:var(--accent);
+            background:var(--brick-soft);color:var(--brick);
         }
-        .cookie-banner .cookie-ico svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-        .cookie-banner p{margin:0;flex:1;color:var(--text);font-size:13px}
+        .cookie-banner .cookie-ico svg{
+            width:16px;height:16px;
+            stroke:currentColor;fill:none;stroke-width:1.8;
+            stroke-linecap:round;stroke-linejoin:round;
+        }
+        .cookie-banner p{margin:0;flex:1;color:var(--text);font-size:12.5px}
         .cookie-ok{
-            background:var(--accent);color:#fff;
-            border:none;border-radius:999px;
-            padding:8px 18px;cursor:pointer;
-            font-size:13px;font-weight:700;
-            font-family:inherit;
+            background:var(--brick);color:#fff;
+            border:none;border-radius:3px;
+            padding:9px 18px;cursor:pointer;
+            font-family:'Inter',sans-serif;
+            font-size:11px;font-weight:800;
+            letter-spacing:.12em;text-transform:uppercase;
             flex-shrink:0;transition:all .15s ease;
         }
-        .cookie-ok:hover{filter:brightness(1.1)}
+        .cookie-ok:hover{background:#a83615}
         .cookie-ok:active{transform:scale(.96)}
 
         /* ============ FOOTER ============ */
         footer.site-footer{
-            max-width:1920px;margin:40px auto 0;
-            padding:24px 16px 32px;
+            max-width:1600px;margin:60px auto 0;
+            padding:40px 24px 48px;
             border-top:1px solid var(--border);
-            text-align:center;
+        }
+        .foot-grid{
+            display:grid;
+            grid-template-columns:1fr;
+            gap:32px;
+            margin-bottom:32px;
+        }
+        @media(min-width:700px){
+            .foot-grid{grid-template-columns:2fr 1fr 1fr;gap:48px}
+        }
+        .foot-brand{
+            font-family:'Playfair Display',serif;
+            font-size:26px;
+            font-weight:900;
+            letter-spacing:.02em;
+            text-transform:uppercase;
+            color:var(--text);
+            margin-bottom:8px;
+            line-height:1;
+        }
+        .foot-brand-tag{
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:700;
+            letter-spacing:.24em;
+            text-transform:uppercase;
+            color:var(--gold);
+            margin-bottom:14px;
+        }
+        .foot-about{
+            font-family:'Lora',serif;
+            font-size:13px;
+            line-height:1.7;
+            color:var(--text-dim);
+            margin:0;
+            font-style:italic;
+            max-width:420px;
+        }
+        .foot-col-title{
+            font-family:'Inter',sans-serif;
+            font-size:9px;
+            font-weight:800;
+            letter-spacing:.24em;
+            text-transform:uppercase;
+            color:var(--text-muted);
+            margin-bottom:12px;
+            padding-bottom:8px;
+            border-bottom:1px solid var(--border);
+        }
+        .foot-links{list-style:none;padding:0;margin:0}
+        .foot-links li{margin-bottom:8px}
+        .foot-links a{
+            font-family:'Inter',sans-serif;
+            font-size:12.5px;
+            color:var(--text-dim);
+            text-decoration:none;
+            transition:color .15s ease;
+        }
+        .foot-links a:hover{color:var(--brick)}
+        .foot-bottom{
+            display:flex;align-items:center;justify-content:space-between;
+            gap:16px;flex-wrap:wrap;
+            padding-top:24px;
+            border-top:1px solid var(--border);
         }
         .foot-copy{
-            font-size:12px;color:var(--text-dim);
-            margin:0;line-height:1.6;
-            display:flex;align-items:center;justify-content:center;
-            gap:8px;flex-wrap:wrap;
+            font-family:'Inter',sans-serif;
+            font-size:11px;
+            color:var(--text-muted);
+            margin:0;
+            letter-spacing:.02em;
         }
-        .foot-copy .copy-ico{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.7}
-        .foot-copy strong{color:var(--text);font-weight:600}
+        .foot-copy strong{color:var(--text);font-weight:700}
         .foot-badge{
             display:inline-flex;align-items:center;gap:6px;
-            margin-top:12px;font-size:10px;font-weight:700;
-            letter-spacing:.15em;text-transform:uppercase;
-            color:var(--text-dim);
-            padding:5px 12px;
-            border:1px solid var(--border-strong);
-            border-radius:999px;
+            font-family:'Inter',sans-serif;
+            font-size:9px;font-weight:800;
+            letter-spacing:.18em;text-transform:uppercase;
+            color:var(--brick);
+            padding:5px 10px;
+            border:1px solid var(--brick-soft);
+            border-radius:2px;
         }
-        .foot-badge svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;color:var(--accent)}
-        .foot-tagline{
-            margin-top:10px;font-size:11px;
-            color:var(--text-muted);letter-spacing:.06em;
+        .foot-badge svg{
+            width:11px;height:11px;
+            stroke:currentColor;fill:none;stroke-width:2;
+            stroke-linecap:round;stroke-linejoin:round;
         }
     </style>
 
@@ -599,83 +1147,119 @@ layout: null
 </head>
 <body>
 
+    <!-- ============ MASTHEAD ============ -->
     <header class="site-header">
         <div class="header-inner">
-            <button class="icon-btn" id="menuOpen" aria-label="Menu">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
-                </svg>
-            </button>
-
-            <a href="/" class="brand">
-                <div class="brand-mark" id="brandMark">A</div>
-                <span class="brand-name" id="brandName">Atikah</span>
-                <span class="brand-tag" data-i18n="brandTag">Vault</span>
-            </a>
-
-            <div class="header-actions">
-                <button class="lang-btn" id="langToggle" aria-label="Switch language">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M2 12h20"/>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                    </svg>
-                    <span id="langCode">EN</span>
-                </button>
-                <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
-                    <svg id="sunIcon" viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="12" cy="12" r="4"/>
-                        <path d="M12 2v2"/><path d="M12 20v2"/>
-                        <path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/>
-                        <path d="M2 12h2"/><path d="M20 12h2"/>
-                        <path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/>
-                    </svg>
-                    <svg id="moonIcon" viewBox="0 0 24 24" style="display:none" aria-hidden="true">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                </button>
+            <div class="masthead-row">
+                <a href="/" class="masthead-brand">
+                    <span class="masthead-name" id="brandName">Atikah</span>
+                    <span class="masthead-tagline" data-i18n="tagline">The Vault · Curated Adult Stories</span>
+                </a>
+                <div class="masthead-actions">
+                    <button class="lang-btn" id="langToggle" aria-label="Switch language">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <span id="langCode">EN</span>
+                    </button>
+                    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+                        <svg id="sunIcon" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"/>
+                            <path d="M12 2v2"/><path d="M12 20v2"/>
+                            <path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/>
+                            <path d="M2 12h2"/><path d="M20 12h2"/>
+                            <path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/>
+                        </svg>
+                        <svg id="moonIcon" viewBox="0 0 24 24" style="display:none" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                    <button class="icon-btn" id="menuOpen" aria-label="Menu">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="issue-bar">
+                <div class="issue-bar-left">
+                    <span class="highlight">Issue <span id="issueNum">No. 01</span></span>
+                    <span class="dot"></span>
+                    <span id="issueDate">Wednesday, November 2026</span>
+                </div>
+                <span data-i18n="issueTag">Daily Edition</span>
             </div>
         </div>
     </header>
 
-    <!-- Menu overlay + drawer -->
-    <div class="menu-overlay" id="menuOverlay"></div>
+    <!-- ============ MENU ============ -->
     <aside class="menu-panel" id="menuPanel" role="dialog" aria-label="Navigation">
         <div class="menu-head">
-            <div class="menu-head-mark" id="menuHeadMark">A</div>
-            <div class="menu-head-text">
+            <div class="menu-head-title">
                 <span class="menu-head-name" id="menuHeadName">Atikah</span>
-                <span class="menu-head-sub" data-i18n="menuSub">Menu</span>
+                <span class="menu-head-sub" data-i18n="menuSub">The Vault</span>
             </div>
+            <button class="menu-close" id="menuClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18 6 6 18"/><path d="M6 6l12 12"/>
+                </svg>
+            </button>
         </div>
         <div class="menu-body">
-
             <a href="/" class="menu-link">
                 <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
                 <span data-i18n="home">Home</span>
             </a>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span data-i18n="today">Today's Edition</span>
+            </a>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><path d="M12 3l2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4z"/></svg>
+                <span data-i18n="trending">Trending</span>
+            </a>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg>
+                <span data-i18n="archive">The Archive</span>
+            </a>
 
-            <div class="menu-divider"></div>
+            <div class="menu-section-label" data-i18n="sectionsLabel">Sections</div>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><path d="M12 3l2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4z"/></svg>
+                <span data-i18n="sectionAmateur">Amateur</span>
+            </a>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg>
+                <span data-i18n="sectionStories">Stories</span>
+            </a>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+                <span data-i18n="sectionStudio">Studio</span>
+            </a>
+            <a href="#" class="menu-link">
+                <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M3 11h18"/></svg>
+                <span data-i18n="sectionVault">The Vault</span>
+            </a>
 
             <div class="menu-section-label" data-i18n="aboutLabel">About</div>
             <div class="menu-legal">
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                        <span data-i18n="aboutTitle">About</span>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        <span data-i18n="aboutTitle">About Atikah</span>
                         <span class="chev"></span>
                     </summary>
                     <div class="menu-legal-body" id="aboutBody"></div>
                 </details>
             </div>
 
-            <div class="menu-divider"></div>
-
             <div class="menu-section-label" data-i18n="legalLabel">Legal</div>
             <div class="menu-legal">
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/></svg>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/></svg>
                         <span data-i18n="privacyTitle">Privacy</span>
                         <span class="chev"></span>
                     </summary>
@@ -683,7 +1267,7 @@ layout: null
                 </details>
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
                         <span data-i18n="termsTitle">Terms</span>
                         <span class="chev"></span>
                     </summary>
@@ -691,39 +1275,37 @@ layout: null
                 </details>
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-                        <span data-i18n="disclaimerTitle">18+</span>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                        <span data-i18n="disclaimerTitle">18+ Disclaimer</span>
                         <span class="chev"></span>
                     </summary>
                     <div class="menu-legal-body" id="disclaimerBody"></div>
                 </details>
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="15.5" cy="10.5" r="1"/><circle cx="12" cy="16" r="1"/></svg>
-                        <span data-i18n="cookieTitle">Cookies</span>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="15.5" cy="10.5" r="1"/><circle cx="12" cy="16" r="1"/></svg>
+                        <span data-i18n="cookieTitle">Cookie Policy</span>
                         <span class="chev"></span>
                     </summary>
                     <div class="menu-legal-body" id="cookieBody"></div>
                 </details>
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01"/><path d="M15 15h.01"/><path d="M9.5 14.5a4 4 0 0 0 5 0"/></svg>
-                        <span data-i18n="dmcaTitle">DMCA</span>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01"/><path d="M15 15h.01"/><path d="M9.5 14.5a4 4 0 0 0 5 0"/></svg>
+                        <span data-i18n="dmcaTitle">DMCA / Copyright</span>
                         <span class="chev"></span>
                     </summary>
                     <div class="menu-legal-body" id="dmcaBody"></div>
                 </details>
                 <details>
                     <summary>
-                        <svg viewBox="0 0 24 24" style="width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
-                        <span data-i18n="section2257Title">2257</span>
+                        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;color:var(--gold)"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+                        <span data-i18n="section2257Title">18 U.S.C. § 2257</span>
                         <span class="chev"></span>
                     </summary>
                     <div class="menu-legal-body" id="section2257Body"></div>
                 </details>
             </div>
-
-            <div class="menu-divider"></div>
 
             <div class="menu-section-label" data-i18n="contactLabel">Contact</div>
             <ul class="menu-contact-list">
@@ -752,142 +1334,251 @@ layout: null
         </div>
     </aside>
 
-    <!-- i18n Dictionary -->
+    <!-- ============ i18n ============ -->
     <script id="i18n-data" type="application/json">
     {
       "en": {
-        "brandTag": "Vault",
-        "menuSub": "Menu",
+        "tagline": "The Vault · Curated Adult Stories",
+        "issueTag": "Daily Edition",
+        "menuSub": "The Vault",
         "home": "Home",
+        "today": "Today's Edition",
+        "trending": "Trending",
+        "archive": "The Archive",
+        "sectionsLabel": "Sections",
+        "sectionAmateur": "Amateur",
+        "sectionStories": "Stories",
+        "sectionStudio": "Studio",
+        "sectionVault": "The Vault",
         "aboutLabel": "About",
-        "aboutTitle": "About",
+        "aboutTitle": "About Atikah",
         "legalLabel": "Legal",
         "privacyTitle": "Privacy",
         "termsTitle": "Terms",
-        "disclaimerTitle": "18+",
-        "cookieTitle": "Cookies",
-        "dmcaTitle": "DMCA",
-        "section2257Title": "2257",
+        "disclaimerTitle": "18+ Disclaimer",
+        "cookieTitle": "Cookie Policy",
+        "dmcaTitle": "DMCA / Copyright",
+        "section2257Title": "18 U.S.C. § 2257",
         "contactLabel": "Contact",
-        "sections": [
-          { "key": "Recommended", "eyebrow": "Just for you" },
-          { "key": "Trending Now", "eyebrow": "Trending" },
-          { "key": "Recently Added", "eyebrow": "New" },
-          { "key": "Most Watched", "eyebrow": "Popular" },
-          { "key": "The Vault", "eyebrow": "Archive" }
-        ],
-        "clips": "videos",
-        "footerRights": "All rights reserved",
-        "footerBadge": "Adults Only · 18+",
-        "footerTagline": "Free curated amateur videos · Updated daily",
-        "cookieText": "We use cookies to make your browsing smoother.",
-        "cookieOk": "Got it",
+        "featuredLabel": "Featured Story",
+        "todayLabel": "Today's Edition",
+        "todayTag": "The Latest",
+        "editorLabel": "Editor's Picks",
+        "editorTag": "Hand-picked",
+        "archiveLabel": "The Archive",
+        "archiveTag": "From the vault",
+        "watchNow": "Watch Now",
+        "readStory": "Read Story",
         "viewsFormat": "{n} views",
         "timeAgo": "{n} {unit} ago",
         "units": { "d": "day", "w": "week", "mo": "month", "y": "year" },
-        "aboutBody": "<p><strong class=\"brand-about\">Atikah</strong> is a hand-curated vault of authentic amateur clips, sourced from Indonesia and neighboring Asian regions.</p><p>Every clip is reviewed for quality and authenticity before it enters the vault. The collection refreshes daily.</p><p>This site is strictly for adult visitors (18 years and older).</p>",
-        "privacyBody": "<p><strong>Effective date:</strong> <span class=\"js-year\">2025</span></p><p>Your privacy matters to us. This policy explains what happens to information when you browse the vault.</p><p>We do <strong>not</strong> collect personal details such as names, email addresses, or payment data.</p><ul><li><strong>Local storage</strong> — theme, cookie consent, age verification live in your browser only.</li><li><strong>Server logs</strong> — standard access logs may be recorded by our hosting provider for security.</li></ul><p>Every video is embedded from a third-party platform.</p><p>No third-party tracking cookies are used by us directly.</p>",
-        "termsBody": "<p><strong>Effective date:</strong> <span class=\"js-year\">2025</span></p><p>By browsing or using this website, you agree to the terms below.</p><p><strong>1. Who May Use This Site</strong></p><p>You must be at least 18 years old to access this vault.</p><p><strong>2. The Content</strong></p><p>Clips are embedded from third-party platforms — we do not host or own the videos shown.</p><p><strong>3. Acceptable Use</strong></p><ul><li>No unlawful purpose</li><li>No unauthorized access attempts</li><li>No content scraping</li><li>No access if under 18</li></ul><p><strong>4. No Warranties</strong></p><p>The site is provided \"as is\" with no warranties of any kind.</p><p><strong>5. Limitation of Liability</strong></p><p>We are not liable for any damages arising from use of the site.</p>",
-        "disclaimerBody": "<p><strong>ADULTS ONLY.</strong> This website contains adult material meant solely for adults. By entering, you confirm that you are at least 18 years old and that viewing adult content is legal where you are.</p><p>All content is fictional and for entertainment only. Every character depicted is 18 years of age or older.</p>",
-        "cookieBody": "<p>This site relies on the following cookies:</p><ul><li><strong>age-verified</strong> — age verification (essential)</li><li><strong>cookie-consent</strong> — cookie choice (essential)</li><li><strong>theme</strong> — dark/light preference (functional)</li><li><strong>lang</strong> — language choice (functional)</li></ul><p>No third-party tracking cookies.</p>",
-        "dmcaBody": "<p>We respect the intellectual property rights of others. If you believe your copyrighted work appears on this site without authorization, you may file a DMCA takedown notice.</p><p>Include: identification of the work, URL, your contact details, a good-faith statement, a statement under penalty of perjury, and your signature.</p><p>We respond to valid DMCA notices within 72 hours.</p>",
-        "section2257Body": "<p>This website is <strong>not a primary or secondary producer</strong> of any sexually explicit content. All visual depictions are <strong>embedded from third-party platforms</strong> solely responsible for compliance with 18 U.S.C. § 2257.</p><p>We do not host, upload, store, or transmit any sexually explicit media on our servers.</p><p>We require all third-party sources to confirm performers were 18+ at time of production.</p>"
+        "storyIntro1": "An intimate portrait series exploring the quiet moments between strangers.",
+        "storyIntro2": "A slow-burn story of longing, captured in the soft light of a rented room.",
+        "storyIntro3": "Real people, real moments — collected from the hidden corners of Nusantara.",
+        "storyIntro4": "A single afternoon, remembered through the lens of those who were there.",
+        "storyIntro5": "When the city sleeps, these stories begin.",
+        "storyIntro6": "Unfiltered, unscripted, unapologetic — the voices of a generation.",
+        "footerRights": "All rights reserved",
+        "footerBadge": "Adults Only · 18+",
+        "footerTagline": "The Vault · Updated daily",
+        "footerAbout": "An editorial collection of curated adult stories from Nusantara and across Asia. Intimate, unfiltered, artful.",
+        "footerColAbout": "About",
+        "footerColLegal": "Legal",
+        "footerColFollow": "Follow",
+        "footerLinkAbout": "Our Story",
+        "footerLinkContact": "Contact",
+        "footerLinkArchive": "Archive",
+        "footerLinkPrivacy": "Privacy",
+        "footerLinkTerms": "Terms",
+        "footerLinkDmca": "DMCA",
+        "footerLink2257": "2257",
+        "footerLinkWa": "WhatsApp",
+        "footerLinkTg": "Telegram",
+        "footerLinkEmail": "Email",
+        "cookieText": "We use cookies to make your browsing smoother.",
+        "cookieOk": "Accept",
+        "aboutBody": "<p><strong class=\"brand-about\">Atikah</strong> is a hand-curated editorial vault of authentic amateur stories, sourced from Nusantara and neighboring Asian regions. We celebrate unscripted, unfiltered moments shared by real people — no studios, no staged sets, no overproduction.</p><p>Every story is reviewed for quality and authenticity before it enters the vault. The collection refreshes daily so there is always something new to discover.</p><p>This site is strictly for adult visitors (18 years and older).</p>",
+        "privacyBody": "<p><strong>Effective date:</strong> <span class=\"js-year\">2025</span></p><p>Your privacy matters to us. This policy explains what happens to information when you browse the vault.</p><p>We do <strong>not</strong> collect personal details such as names, email addresses, or payment data. No sign-up is required.</p><ul><li><strong>Local storage</strong> — theme preference, cookie consent, and age verification live in your browser only.</li><li><strong>Server logs</strong> — standard access logs may be recorded by our hosting provider for security, retained up to 30 days.</li></ul><p>Every video is embedded from a third-party platform under their own privacy rules.</p><p>No analytics or advertising cookies are set directly by us.</p>",
+        "termsBody": "<p><strong>Effective date:</strong> <span class=\"js-year\">2025</span></p><p>By browsing this website, you agree to the terms below.</p><p><strong>1. Eligibility</strong></p><p>You must be at least 18 years old to access the vault.</p><p><strong>2. Content</strong></p><p>All stories are editorial and for entertainment only. Videos are embedded from third-party platforms — we do not host or own them.</p><p><strong>3. Acceptable Use</strong></p><ul><li>No unlawful purpose</li><li>No unauthorized access attempts</li><li>No scraping or redistribution</li><li>No access if under 18</li></ul><p><strong>4. No Warranties</strong></p><p>The site is provided \"as is\" with no warranties of any kind.</p><p><strong>5. Limitation of Liability</strong></p><p>We are not liable for any damages arising from use of the site.</p>",
+        "disclaimerBody": "<p><strong>ADULTS ONLY.</strong> This website contains adult material meant solely for adults. By entering, you confirm that you are at least 18 years old, that viewing adult content is legal where you are, and that you consent to seeing it.</p><p>All content is fictional and for entertainment only. Every character depicted is 18 years of age or older.</p><p>This site is not intended for users in jurisdictions where adult content is prohibited.</p>",
+        "cookieBody": "<p>This site relies on the following cookies:</p><ul><li><strong>age-verified</strong> — age verification (essential, 30 days)</li><li><strong>cookie-consent</strong> — cookie choice (essential, 1 year)</li><li><strong>theme</strong> — dark/light preference (functional, 1 year)</li><li><strong>lang</strong> — language choice (functional, 1 year)</li></ul><p>No third-party tracking cookies are used.</p>",
+        "dmcaBody": "<p>We respect the intellectual property rights of others. If you believe your copyrighted work appears on this site without authorization, you may file a DMCA takedown notice.</p><p><strong>Include:</strong></p><ul><li>Identification of the copyrighted work</li><li>URL of the allegedly infringing material</li><li>Your full name and contact details</li><li>A good-faith statement</li><li>A statement under penalty of perjury</li><li>Your signature</li></ul><p>We respond to valid DMCA notices within 72 hours.</p>",
+        "section2257Body": "<p>This website is <strong>not a primary or secondary producer</strong> of any sexually explicit content. All visual depictions are <strong>embedded from third-party platforms</strong> solely responsible for compliance with 18 U.S.C. § 2257 and 28 C.F.R. Part 75.</p><p>We do not host, upload, store, or transmit any sexually explicit media on our servers.</p><p>We require all third-party sources to confirm performers were 18+ at time of production.</p>"
       },
       "id": {
-        "brandTag": "Vault",
-        "menuSub": "Menu",
+        "tagline": "The Vault · Kisah Dewasa Terkurasi",
+        "issueTag": "Edisi Harian",
+        "menuSub": "The Vault",
         "home": "Beranda",
+        "today": "Edisi Hari Ini",
+        "trending": "Tren",
+        "archive": "Arsip",
+        "sectionsLabel": "Rubrik",
+        "sectionAmateur": "Amatir",
+        "sectionStories": "Kisah",
+        "sectionStudio": "Studio",
+        "sectionVault": "The Vault",
         "aboutLabel": "Tentang",
-        "aboutTitle": "Tentang",
+        "aboutTitle": "Tentang Atikah",
         "legalLabel": "Legal",
         "privacyTitle": "Privasi",
         "termsTitle": "Syarat",
-        "disclaimerTitle": "18+",
-        "cookieTitle": "Cookie",
-        "dmcaTitle": "DMCA",
-        "section2257Title": "2257",
+        "disclaimerTitle": "Penafian 18+",
+        "cookieTitle": "Kebijakan Cookie",
+        "dmcaTitle": "DMCA / Hak Cipta",
+        "section2257Title": "18 U.S.C. § 2257",
         "contactLabel": "Kontak",
-        "sections": [
-          { "key": "Direkomendasikan", "eyebrow": "Untuk Anda" },
-          { "key": "Sedang Tren", "eyebrow": "Tren" },
-          { "key": "Baru Ditambahkan", "eyebrow": "Baru" },
-          { "key": "Paling Banyak Ditonton", "eyebrow": "Populer" },
-          { "key": "Arsip", "eyebrow": "Koleksi" }
-        ],
-        "clips": "video",
-        "footerRights": "Seluruh hak dilindungi",
-        "footerBadge": "Khusus Dewasa · 18+",
-        "footerTagline": "Video amatir gratis · Diperbarui setiap hari",
-        "cookieText": "Kami memakai cookie agar jelajah Anda lebih nyaman.",
-        "cookieOk": "Mengerti",
+        "featuredLabel": "Kisah Utama",
+        "todayLabel": "Edisi Hari Ini",
+        "todayTag": "Terbaru",
+        "editorLabel": "Pilihan Editor",
+        "editorTag": "Kurasi",
+        "archiveLabel": "Arsip",
+        "archiveTag": "Dari vault",
+        "watchNow": "Tonton Sekarang",
+        "readStory": "Baca Kisah",
         "viewsFormat": "{n} tayangan",
         "timeAgo": "{n} {unit} lalu",
         "units": { "d": "hari", "w": "minggu", "mo": "bulan", "y": "tahun" },
-        "aboutBody": "<p><strong class=\"brand-about\">Atikah</strong> adalah galeri klip amatir pilihan dari Nusantara dan sekitarnya.</p><p>Setiap klip ditinjau dari sisi kualitas dan keaslian sebelum masuk galeri. Koleksi diperbarui tiap hari.</p><p>Situs ini khusus untuk pengunjung dewasa (18 tahun ke atas).</p>",
-        "privacyBody": "<p><strong>Berlaku sejak:</strong> <span class=\"js-year\">2025</span></p><p>Privasi Anda penting bagi kami.</p><p>Kami <strong>tidak</strong> mengumpulkan data pribadi seperti nama, email, atau data pembayaran.</p><ul><li><strong>Penyimpanan lokal</strong> — tema, persetujuan cookie, verifikasi usia hanya ada di browser Anda.</li><li><strong>Log server</strong> — log akses standar dapat dicatat oleh penyedia hosting untuk keamanan.</li></ul><p>Setiap video disematkan dari platform pihak ketiga.</p><p>Tidak ada cookie pelacak pihak ketiga yang dipasang langsung oleh kami.</p>",
-        "termsBody": "<p><strong>Berlaku sejak:</strong> <span class=\"js-year\">2025</span></p><p>Dengan menjelajahi situs ini, Anda setuju dengan syarat di bawah.</p><p><strong>1. Siapa yang Boleh Menggunakan</strong></p><p>Anda harus berusia minimal 18 tahun untuk mengakses galeri ini.</p><p><strong>2. Konten</strong></p><p>Klip disematkan dari platform pihak ketiga — kami tidak menghosting atau memiliki video yang ditampilkan.</p><p><strong>3. Penggunaan yang Wajar</strong></p><ul><li>Tidak untuk tujuan melanggar hukum</li><li>Tidak mencoba akses tidak sah</li><li>Tidak mengikis konten</li><li>Tidak mengakses jika di bawah 18 tahun</li></ul><p><strong>4. Tanpa Jaminan</strong></p><p>Situs disediakan \"sebagaimana adanya\" tanpa jaminan apa pun.</p><p><strong>5. Batasan Tanggung Jawab</strong></p><p>Kami tidak bertanggung jawab atas kerusakan apa pun dari penggunaan situs.</p>",
-        "disclaimerBody": "<p><strong>KHUSUS DEWASA.</strong> Situs ini memuat materi dewasa khusus untuk orang dewasa. Dengan masuk, Anda mengonfirmasi berusia minimal 18 tahun dan menonton konten dewasa legal di lokasi Anda.</p><p>Semua konten fiktif dan hanya untuk hiburan. Setiap karakter berusia 18 tahun atau lebih.</p>",
-        "cookieBody": "<p>Situs ini memakai cookie berikut:</p><ul><li><strong>age-verified</strong> — verifikasi usia (penting)</li><li><strong>cookie-consent</strong> — pilihan cookie (penting)</li><li><strong>theme</strong> — preferensi gelap/terang (fungsional)</li><li><strong>lang</strong> — pilihan bahasa (fungsional)</li></ul><p>Tidak ada cookie pelacak pihak ketiga.</p>",
-        "dmcaBody": "<p>Kami menghormati hak kekayaan intelektual orang lain. Jika Anda yakin karya berhak cipta Anda muncul di sini tanpa izin, Anda dapat mengirim pemberitahuan takedown DMCA.</p><p>Sertakan: identifikasi karya, URL, detail kontak Anda, pernyataan itikad baik, pernyataan di bawah sumpah, dan tanda tangan Anda.</p><p>Kami menanggapi pemberitahuan DMCA yang sah dalam 72 jam.</p>",
-        "section2257Body": "<p>Situs ini <strong>bukan produser primer atau sekunder</strong> dari konten seksual eksplisit apa pun. Semua penggambaran visual <strong>disematkan dari platform pihak ketiga</strong> yang bertanggung jawab penuh atas kepatuhan terhadap 18 U.S.C. § 2257.</p><p>Kami tidak menghosting, mengunggah, menyimpan, atau mengirimkan media seksual eksplisit apa pun di server kami.</p><p>Kami mewajibkan semua sumber pihak ketiga untuk mengonfirmasi performer berusia 18+ saat produksi.</p>"
+        "storyIntro1": "Potret intim tentang momen-momen sunyi di antara orang asing.",
+        "storyIntro2": "Kisah rindu yang mengendap, tertangkap dalam cahaya lembut kamar sewaan.",
+        "storyIntro3": "Orang nyata, momen nyata — dihimpun dari sudut-sudut tersembunyi Nusantara.",
+        "storyIntro4": "Satu sore, dikenang lewat lensa mereka yang ada di sana.",
+        "storyIntro5": "Saat kota tertidur, kisah-kisah ini dimulai.",
+        "storyIntro6": "Tanpa filter, tanpa skenario — suara satu generasi.",
+        "footerRights": "Seluruh hak dilindungi",
+        "footerBadge": "Khusus Dewasa · 18+",
+        "footerTagline": "The Vault · Diperbarui tiap hari",
+        "footerAbout": "Koleksi editorial kisah dewasa terkurasi dari Nusantara dan Asia. Intim, tanpa filter, artistik.",
+        "footerColAbout": "Tentang",
+        "footerColLegal": "Legal",
+        "footerColFollow": "Ikuti",
+        "footerLinkAbout": "Kisah Kami",
+        "footerLinkContact": "Kontak",
+        "footerLinkArchive": "Arsip",
+        "footerLinkPrivacy": "Privasi",
+        "footerLinkTerms": "Syarat",
+        "footerLinkDmca": "DMCA",
+        "footerLink2257": "2257",
+        "footerLinkWa": "WhatsApp",
+        "footerLinkTg": "Telegram",
+        "footerLinkEmail": "Email",
+        "cookieText": "Kami memakai cookie agar jelajah Anda lebih nyaman.",
+        "cookieOk": "Setuju",
+        "aboutBody": "<p><strong class=\"brand-about\">Atikah</strong> adalah galeri editorial kurasi kisah amatir otentik dari Nusantara dan sekitarnya. Kami merayakan momen tanpa skenario dari orang-orang nyata — tanpa studio, tanpa set panggung.</p><p>Setiap kisah ditinjau dari sisi kualitas dan keaslian sebelum masuk galeri. Koleksi diperbarui tiap hari.</p><p>Situs ini khusus pengunjung dewasa (18 tahun ke atas).</p>",
+        "privacyBody": "<p><strong>Berlaku sejak:</strong> <span class=\"js-year\">2025</span></p><p>Privasi Anda penting bagi kami.</p><p>Kami <strong>tidak</strong> mengumpulkan data pribadi seperti nama, email, atau data pembayaran.</p><ul><li><strong>Penyimpanan lokal</strong> — preferensi tema, persetujuan cookie, dan verifikasi usia hanya ada di browser Anda.</li><li><strong>Log server</strong> — log akses standar dicatat penyedia hosting untuk keamanan, maks 30 hari.</li></ul><p>Setiap video disematkan dari platform pihak ketiga.</p><p>Tidak ada cookie analitik atau iklan yang dipasang langsung oleh kami.</p>",
+        "termsBody": "<p><strong>Berlaku sejak:</strong> <span class=\"js-year\">2025</span></p><p>Dengan menjelajahi situs ini, Anda setuju dengan syarat di bawah.</p><p><strong>1. Kelayakan</strong></p><p>Anda harus berusia minimal 18 tahun untuk mengakses vault.</p><p><strong>2. Konten</strong></p><p>Semua kisah bersifat editorial dan hanya untuk hiburan. Video disematkan dari platform pihak ketiga.</p><p><strong>3. Penggunaan yang Wajar</strong></p><ul><li>Tidak untuk tujuan melanggar hukum</li><li>Tidak mencoba akses tidak sah</li><li>Tidak mengikis atau mendistribusikan ulang</li><li>Tidak mengakses jika di bawah 18 tahun</li></ul><p><strong>4. Tanpa Jaminan</strong></p><p>Situs disediakan \"sebagaimana adanya\" tanpa jaminan apa pun.</p><p><strong>5. Batasan Tanggung Jawab</strong></p><p>Kami tidak bertanggung jawab atas kerusakan apa pun dari penggunaan situs.</p>",
+        "disclaimerBody": "<p><strong>KHUSUS DEWASA.</strong> Situs ini memuat materi dewasa untuk orang dewasa. Dengan masuk, Anda mengonfirmasi berusia minimal 18 tahun dan menonton konten dewasa legal di lokasi Anda.</p><p>Semua konten fiktif untuk hiburan. Setiap karakter berusia 18 tahun atau lebih.</p><p>Tidak ditujukan untuk pengguna di wilayah yang melarang konten dewasa.</p>",
+        "cookieBody": "<p>Situs ini memakai cookie berikut:</p><ul><li><strong>age-verified</strong> — verifikasi usia (penting, 30 hari)</li><li><strong>cookie-consent</strong> — pilihan cookie (penting, 1 tahun)</li><li><strong>theme</strong> — preferensi gelap/terang (fungsional, 1 tahun)</li><li><strong>lang</strong> — pilihan bahasa (fungsional, 1 tahun)</li></ul><p>Tidak ada cookie pelacak pihak ketiga.</p>",
+        "dmcaBody": "<p>Kami menghormati hak kekayaan intelektual orang lain. Jika Anda yakin karya berhak cipta Anda muncul di sini tanpa izin, Anda dapat mengirim pemberitahuan takedown DMCA.</p><p><strong>Sertakan:</strong></p><ul><li>Identifikasi karya berhak cipta</li><li>URL materi yang diduga melanggar</li><li>Nama lengkap dan kontak Anda</li><li>Pernyataan itikad baik</li><li>Pernyataan di bawah sumpah</li><li>Tanda tangan Anda</li></ul><p>Kami menanggapi pemberitahuan DMCA yang sah dalam 72 jam.</p>",
+        "section2257Body": "<p>Situs ini <strong>bukan produser primer atau sekunder</strong> dari konten seksual eksplisit apa pun. Semua penggambaran visual <strong>disematkan dari platform pihak ketiga</strong> yang bertanggung jawab penuh atas kepatuhan terhadap 18 U.S.C. § 2257 dan 28 C.F.R. Bagian 75.</p><p>Kami tidak menghosting, mengunggah, menyimpan, atau mengirimkan media seksual eksplisit apa pun di server kami.</p><p>Kami mewajibkan semua sumber pihak ketiga untuk mengonfirmasi performer berusia 18+ saat produksi.</p>"
       }
     }
     </script>
 
-    <!-- Top Ad -->
-    <div class="ad-break">
-        <div class="ad-box">{% include /ads/banner/01.html %}</div>
-    </div>
+    <!-- ============ BODY ============ -->
+    <div style="height:140px"></div>
 
-    <!-- MAIN -->
-    <main class="main-wrap">
+    <div class="page-wrap">
 
-        {% assign category_posts = site.categories['ab01'] %}
-        {% if category_posts == nil or category_posts.size == 0 %}
-          {% assign category_posts = site.posts %}
-        {% endif %}
-
-        <div id="ad-slots" style="display:none">
-            <div data-ad="1">{% include /ads/banner/02.html %}</div>
-            <div data-ad="2">{% include /ads/banner/03.html %}</div>
-            <div data-ad="3">{% include /ads/banner/04.html %}</div>
-            <div data-ad="4">{% include /ads/banner/05.html %}</div>
+        <div class="ad-break">
+            <div class="ad-box">{% include /ads/banner/01.html %}</div>
         </div>
 
-        <div id="sections-container"></div>
+        <div class="layout">
 
-        <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="side-nav-section">
+                    <div class="side-nav-label" data-i18n="sectionsLabel">Sections</div>
+                    <ul class="side-nav-list" id="sideNav">
+                        <li class="active"><a href="#"><span data-i18n="sectionAmateur">Amateur</span><span class="count">248</span></a></li>
+                        <li><a href="#"><span data-i18n="sectionStories">Stories</span><span class="count">156</span></a></li>
+                        <li><a href="#"><span data-i18n="sectionStudio">Studio</span><span class="count">84</span></a></li>
+                        <li><a href="#"><span data-i18n="sectionVault">The Vault</span><span class="count">412</span></a></li>
+                    </ul>
+                </div>
+                <div class="side-nav-section">
+                    <div class="side-nav-label" data-i18n="archiveLabel">The Archive</div>
+                    <ul class="side-nav-list">
+                        <li><a href="#"><span>2026</span><span class="count">124</span></a></li>
+                        <li><a href="#"><span>2025</span><span class="count">386</span></a></li>
+                        <li><a href="#"><span>2024</span><span class="count">298</span></a></li>
+                    </ul>
+                </div>
+            </aside>
 
-    </main>
+            <!-- MAIN -->
+            <main class="main-content">
 
-    <!-- Bottom ad -->
+                {% assign category_posts = site.categories['ab01'] %}
+                {% if category_posts == nil or category_posts.size == 0 %}
+                  {% assign category_posts = site.posts %}
+                {% endif %}
+
+                <div id="ad-slots" style="display:none">
+                    <div data-ad="1">{% include /ads/banner/02.html %}</div>
+                    <div data-ad="2">{% include /ads/banner/03.html %}</div>
+                    <div data-ad="3">{% include /ads/banner/04.html %}</div>
+                    <div data-ad="4">{% include /ads/banner/05.html %}</div>
+                </div>
+
+                <div id="sections-container"></div>
+
+                <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+
+            </main>
+        </div>
+    </div>
+
     <div class="ad-break bottom">
         <div class="ad-box">{% include /ads/banner/06.html %}</div>
     </div>
 
 {% include paginasi.html %}
-    {% include /ads/gobloggugel/umum.html %}
+    {% include /ads/gobloggugul/umum.html %}
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="site-footer">
-        <p class="foot-copy">
-            <svg class="copy-ico" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M14.5 9.5a3 3 0 1 0 0 5"/>
-            </svg>
-            <span>&copy; <span id="footYear">2025</span> <strong id="footBrand">Atikah</strong> — <span data-i18n="footerRights">All rights reserved</span></span>
-        </p>
-        <div class="foot-badge">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                <path d="M12 9v4"/><path d="M12 17h.01"/>
-            </svg>
-            <span data-i18n="footerBadge">Adults Only · 18+</span>
+        <div class="foot-grid">
+            <div>
+                <div class="foot-brand" id="footBrand">Atikah</div>
+                <div class="foot-brand-tag" data-i18n="tagline">The Vault · Curated Adult Stories</div>
+                <p class="foot-about" data-i18n="footerAbout">An editorial collection of curated adult stories from Nusantara and across Asia. Intimate, unfiltered, artful.</p>
+            </div>
+            <div>
+                <div class="foot-col-title" data-i18n="footerColAbout">About</div>
+                <ul class="foot-links">
+                    <li><a href="#" data-i18n="footerLinkAbout">Our Story</a></li>
+                    <li><a href="#" data-i18n="footerLinkContact">Contact</a></li>
+                    <li><a href="#" data-i18n="footerLinkArchive">Archive</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="foot-col-title" data-i18n="footerColLegal">Legal</div>
+                <ul class="foot-links">
+                    <li><a href="#" data-i18n="footerLinkPrivacy">Privacy</a></li>
+                    <li><a href="#" data-i18n="footerLinkTerms">Terms</a></li>
+                    <li><a href="#" data-i18n="footerLinkDmca">DMCA</a></li>
+                    <li><a href="#" data-i18n="footerLink2257">2257</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="foot-tagline" data-i18n="footerTagline">Free curated amateur videos · Updated daily</div>
+        <div class="foot-bottom">
+            <p class="foot-copy">
+                <span>&copy; <span id="footYear">2026</span> <strong id="footBrandBottom">Atikah</strong> — <span data-i18n="footerRights">All rights reserved</span></span>
+            </p>
+            <div class="foot-badge">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                    <path d="M12 9v4"/><path d="M12 17h.01"/>
+                </svg>
+                <span data-i18n="footerBadge">Adults Only · 18+</span>
+            </div>
+        </div>
     </footer>
 
-    <!-- Cookie -->
+    <!-- COOKIE -->
     <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie notice">
         <span class="cookie-ico" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -898,10 +1589,10 @@ layout: null
             </svg>
         </span>
         <p data-i18n="cookieText">We use cookies to make your browsing smoother.</p>
-        <button class="cookie-ok" id="cookieOk" type="button" data-i18n="cookieOk">Got it</button>
+        <button class="cookie-ok" id="cookieOk" type="button" data-i18n="cookieOk">Accept</button>
     </div>
 
-    <!-- Scripts -->
+    <!-- ============ SCRIPTS ============ -->
     <script>
     (function() {
         var host = window.location.hostname.split(".");
@@ -910,29 +1601,40 @@ layout: null
         var clean = sub.replace(/-/g, " ");
         var display = clean.replace(/\b\w/g, function(c){ return c.toUpperCase(); });
 
-        document.getElementById("brandMark").textContent = display.charAt(0).toUpperCase();
         document.getElementById("brandName").textContent = display;
         document.getElementById("menuHeadName").textContent = display;
-        document.getElementById("menuHeadMark").textContent = display.charAt(0).toUpperCase();
+        document.getElementById("footBrand").textContent = display;
+        document.getElementById("footBrandBottom").textContent = display;
 
-        var overlay = document.getElementById("menuOverlay");
-        var panel = document.getElementById("menuPanel");
-        function openMenu(){
-            panel.classList.add("open");
-            overlay.classList.add("open");
-            document.body.style.overflow = "hidden";
+        // Issue number & date
+        var issueEl = document.getElementById("issueNum");
+        var dateEl = document.getElementById("issueDate");
+        var now = new Date();
+        if (issueEl) {
+            var dayOfYear = Math.floor((now - new Date(now.getFullYear(),0,0)) / 86400000);
+            issueEl.textContent = "No. " + String(dayOfYear).padStart(3, "0");
         }
+        if (dateEl) {
+            var lang = document.documentElement.getAttribute("lang") || "en";
+            var locale = lang === "id" ? "id-ID" : "en-US";
+            try {
+                dateEl.textContent = now.toLocaleDateString(locale, { weekday:"long", year:"numeric", month:"long", day:"numeric" });
+            } catch(e) {
+                dateEl.textContent = now.toDateString();
+            }
+        }
+
+        var panel = document.getElementById("menuPanel");
+        document.getElementById("menuOpen").addEventListener("click", function(){
+            panel.classList.add("open");
+            document.body.style.overflow = "hidden";
+        });
         function closeMenu(){
             panel.classList.remove("open");
-            overlay.classList.remove("open");
             document.body.style.overflow = "";
         }
-        document.getElementById("menuOpen").addEventListener("click", openMenu);
-        overlay.addEventListener("click", closeMenu);
+        document.getElementById("menuClose").addEventListener("click", closeMenu);
         document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeMenu(); });
-        panel.querySelectorAll('a[href^="#"]').forEach(function(link){
-            link.addEventListener("click", function(){ setTimeout(closeMenu, 100); });
-        });
         panel.querySelectorAll('a[href]:not([href^="#"])').forEach(function(link){
             link.addEventListener("click", closeMenu);
         });
@@ -957,11 +1659,9 @@ layout: null
         });
     })();
 
-    /* i18n */
     window.I18N = (function(){
         var data = JSON.parse(document.getElementById("i18n-data").textContent);
         var current = "en";
-
         function t(key) {
             var dict = data[current] || data.en;
             return dict[key] != null ? dict[key] : (data.en[key] != null ? data.en[key] : key);
@@ -971,11 +1671,17 @@ layout: null
         }
         function apply() {
             document.documentElement.setAttribute("lang", current);
-            ["brandTag","menuSub","home","aboutLabel","aboutTitle","legalLabel","privacyTitle","termsTitle",
-             "disclaimerTitle","cookieTitle","dmcaTitle","section2257Title","contactLabel",
-             "footerRights","footerBadge","footerTagline","cookieText","cookieOk"].forEach(function(k){
-                setText(k, t(k));
-            });
+            ["tagline","issueTag","menuSub","home","today","trending","archive",
+             "sectionsLabel","sectionAmateur","sectionStories","sectionStudio","sectionVault",
+             "aboutLabel","aboutTitle","legalLabel","privacyTitle","termsTitle","disclaimerTitle",
+             "cookieTitle","dmcaTitle","section2257Title","contactLabel",
+             "featuredLabel","todayLabel","todayTag","editorLabel","editorTag","archiveLabel","archiveTag",
+             "watchNow","readStory","footerRights","footerBadge","footerTagline","footerAbout",
+             "footerColAbout","footerColLegal","footerColFollow",
+             "footerLinkAbout","footerLinkContact","footerLinkArchive",
+             "footerLinkPrivacy","footerLinkTerms","footerLinkDmca","footerLink2257",
+             "footerLinkWa","footerLinkTg","footerLinkEmail",
+             "cookieText","cookieOk"].forEach(function(k){ setText(k, t(k)); });
             ["aboutBody","privacyBody","termsBody","disclaimerBody","cookieBody","dmcaBody","section2257Body"].forEach(function(id){
                 var el = document.getElementById(id);
                 if (!el) return;
@@ -986,6 +1692,15 @@ layout: null
             });
             var lc = document.getElementById("langCode");
             if (lc) lc.textContent = current === "en" ? "EN" : "ID";
+            // update date locale
+            var dateEl = document.getElementById("issueDate");
+            if (dateEl) {
+                var now = new Date();
+                var locale = current === "id" ? "id-ID" : "en-US";
+                try {
+                    dateEl.textContent = now.toLocaleDateString(locale, { weekday:"long", year:"numeric", month:"long", day:"numeric" });
+                } catch(e) { dateEl.textContent = now.toDateString(); }
+            }
             document.dispatchEvent(new CustomEvent("langchange", { detail: { lang: current } }));
         }
         function set(lang) {
@@ -1009,11 +1724,13 @@ layout: null
             if (b.indexOf("id") === 0) initial = "id";
         }
         window.I18N.set(initial);
-        document.getElementById("langToggle").addEventListener("click", function(){ window.I18N.toggle(); });
+        document.getElementById("langToggle").addEventListener("click", function(){
+            window.I18N.toggle();
+        });
     })();
     </script>
 
-    <!-- Content Renderer -->
+    <!-- CONTENT RENDERER -->
     <script>
     (function(){
         var allPosts = [
@@ -1026,10 +1743,9 @@ layout: null
             {% endfor %}
         ];
 
-        var perSection = 10;
-        var totalPerPage = 50;
-        var totalPages = Math.ceil(allPosts.length / totalPerPage);
+        var totalPages = Math.ceil(allPosts.length / 50);
         var currentPage = 1;
+        var perPage = 50;
 
         var container = document.getElementById("sections-container");
         var nav = document.getElementById("pagination");
@@ -1081,52 +1797,144 @@ layout: null
                 return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];
             });
         }
+        function introFor(url) {
+            var keys = ["storyIntro1","storyIntro2","storyIntro3","storyIntro4","storyIntro5","storyIntro6"];
+            var idx = hashCode(url) % keys.length;
+            return window.I18N.tr(keys[idx]);
+        }
+        function getCategories() {
+            return ["Amateur", "Stories", "Studio", "The Vault"];
+        }
+        function categoryFor(url) {
+            var cats = getCategories();
+            return cats[hashCode(url) % cats.length];
+        }
 
-        function buildCard(post) {
+        // ===== CARD: EDITORIAL (3:4) =====
+        function buildEdCard(post) {
             var img = post.image
                 ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy">'
                 : '';
             var dur = formatDuration(60 + (hashCode(post.url) % 841));
-            var views = formatViews(post.url);
+            var views = window.I18N.tr("viewsFormat").replace("{n}", formatViews(post.url));
             var ta = timeAgo(post.url);
             var taText = window.I18N.tr("timeAgo")
                 .replace("{n}", ta.n)
                 .replace("{unit}", window.I18N.t("units")[ta.unit]);
-            var viewsText = window.I18N.tr("viewsFormat").replace("{n}", views);
-            var brandLetter = (window.__SITE_NAME__ || "A").charAt(0).toUpperCase();
-            return '<a href="' + escapeHtml(post.url) + '" class="card">' +
-                       '<div class="card-thumb">' + img +
-                           '<span class="card-play" aria-hidden="true">' +
+            var cat = categoryFor(post.url);
+            var intro = introFor(post.url);
+            return '<a href="' + escapeHtml(post.url) + '" class="ed-card">' +
+                       '<div class="ed-thumb">' + img +
+                           '<span class="ed-play" aria-hidden="true">' +
                                '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' +
                            '</span>' +
-                           '<span class="card-dur">' + dur + '</span>' +
+                           '<span class="ed-dur">' + dur + '</span>' +
                        '</div>' +
-                       '<div class="card-row">' +
-                           '<div class="card-avatar">' + brandLetter + '</div>' +
-                           '<div class="card-text">' +
-                               '<h3 class="card-title">' + escapeHtml(post.title) + '</h3>' +
-                               '<div class="card-meta">' +
-                                   '<span>' + viewsText + '</span>' +
-                                   '<span>' + taText + '</span>' +
-                               '</div>' +
+                       '<span class="ed-cat">' + escapeHtml(cat) + '</span>' +
+                       '<h3 class="ed-title">' + escapeHtml(post.title) + '</h3>' +
+                       '<p class="ed-desc">' + escapeHtml(intro) + '</p>' +
+                       '<div class="ed-meta">' + views + ' · ' + taText + '</div>' +
+                   '</a>';
+        }
+
+        // ===== HERO =====
+        function buildHero(post) {
+            if (!post) return "";
+            var img = post.image
+                ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="eager">'
+                : '';
+            var views = window.I18N.tr("viewsFormat").replace("{n}", formatViews(post.url));
+            var ta = timeAgo(post.url);
+            var taText = window.I18N.tr("timeAgo")
+                .replace("{n}", ta.n)
+                .replace("{unit}", window.I18N.t("units")[ta.unit]);
+            var cat = categoryFor(post.url);
+            var intro = introFor(post.url);
+            var watch = window.I18N.tr("watchNow");
+            return '<section class="hero">' +
+                       '<div class="hero-label">' +
+                           '<span class="hero-label-text">' + escapeHtml(window.I18N.tr("featuredLabel")) + '</span>' +
+                           '<span class="hero-label-line"></span>' +
+                           '<span class="hero-label-num">01 / Cover Story</span>' +
+                       '</div>' +
+                       '<a href="' + escapeHtml(post.url) + '" class="hero-card">' +
+                           '<div class="hero-media">' + img +
+                               '<span class="hero-issue">Issue Cover · ' + escapeHtml(cat) + '</span>' +
+                               '<span class="hero-play" aria-hidden="true">' +
+                                   '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' +
+                               '</span>' +
                            '</div>' +
+                           '<h1 class="hero-title">' + escapeHtml(post.title) + '</h1>' +
+                           '<p class="hero-desc">' + escapeHtml(intro) + '</p>' +
+                           '<div class="hero-meta">' +
+                               '<span class="tag">' + escapeHtml(cat) + '</span>' +
+                               '<span class="dot"></span>' +
+                               '<span>' + views + '</span>' +
+                               '<span class="dot"></span>' +
+                               '<span>' + taText + '</span>' +
+                               '<span class="dot"></span>' +
+                               '<span>' + escapeHtml(watch) + ' →</span>' +
+                           '</div>' +
+                       '</a>' +
+                   '</section>';
+        }
+
+        // ===== LIST EDITORIAL (numbered) =====
+        function buildListItem(post, idx) {
+            var num = String(idx + 1).padStart(2, "0");
+            var img = post.image
+                ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy">'
+                : '';
+            var views = window.I18N.tr("viewsFormat").replace("{n}", formatViews(post.url));
+            var ta = timeAgo(post.url);
+            var taText = window.I18N.tr("timeAgo")
+                .replace("{n}", ta.n)
+                .replace("{unit}", window.I18N.t("units")[ta.unit]);
+            var cat = categoryFor(post.url);
+            var intro = introFor(post.url);
+            return '<a href="' + escapeHtml(post.url) + '" class="list-item">' +
+                       '<div class="list-num">' + num + '</div>' +
+                       '<div class="list-body">' +
+                           '<div class="list-cat">' + escapeHtml(cat) + '</div>' +
+                           '<h3 class="list-title">' + escapeHtml(post.title) + '</h3>' +
+                           '<p class="list-desc">' + escapeHtml(intro) + '</p>' +
+                           '<div class="list-meta">' + views + ' · ' + taText + '</div>' +
+                       '</div>' +
+                       '<div class="list-thumb">' + img + '</div>' +
+                   '</a>';
+        }
+
+        // ===== MASONRY ARCHIVE =====
+        function buildMasonryItem(post) {
+            var img = post.image
+                ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy">'
+                : '';
+            var cat = categoryFor(post.url);
+            var views = formatViews(post.url);
+            return '<a href="' + escapeHtml(post.url) + '" class="masonry-item">' + img +
+                       '<div class="masonry-content">' +
+                           '<span class="masonry-cat">' + escapeHtml(cat) + '</span>' +
+                           '<h4 class="masonry-title">' + escapeHtml(post.title) + '</h4>' +
+                           '<div class="masonry-meta">' + views + ' views</div>' +
                        '</div>' +
                    '</a>';
         }
 
-        function renderSection(meta, posts) {
+        // ===== SECTION RENDERER =====
+        function renderSection(meta, posts, builder, extraClass) {
             if (!posts.length) return "";
+            var gridClass = meta.type || "ed-grid";
             return '<section class="section">' +
                        '<div class="section-head">' +
                            '<h2 class="section-title">' +
-                               '<svg class="section-ico" viewBox="0 0 24 24" aria-hidden="true">' +
-                                   '<path d="M12 3l2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4z"/>' +
-                               '</svg>' +
-                               meta.key +
+                               '<span class="num">' + meta.num + '</span>' +
+                               meta.label +
                            '</h2>' +
-                           '<span class="section-count">' + posts.length + ' ' + window.I18N.tr("clips") + '</span>' +
+                           '<span class="section-subtitle">' + meta.tag + '</span>' +
                        '</div>' +
-                       '<div class="grid">' + posts.map(buildCard).join("") + '</div>' +
+                       '<div class="' + gridClass + '">' +
+                           posts.map(function(p, i){ return builder(p, i); }).join("") +
+                       '</div>' +
                    '</section>';
         }
 
@@ -1137,25 +1945,73 @@ layout: null
 
         function renderPage(page) {
             currentPage = page;
-            var start = (page - 1) * totalPerPage;
-            var pagePosts = allPosts.slice(start, start + totalPerPage);
+            var start = (page - 1) * perPage;
+            var pagePosts = allPosts.slice(start, start + perPage);
+
+            if (!pagePosts.length) {
+                container.innerHTML = '<div style="padding:60px 20px;text-align:center;color:var(--text-dim);font-family:Playfair Display,serif;font-style:italic;font-size:18px">No stories in this edition yet.</div>';
+                return;
+            }
+
+            var hero = pagePosts[0];
+            var rest = pagePosts.slice(1);
+
+            // Split rest into groups
+            var todayPosts = rest.slice(0, 6);
+            var editorPosts = rest.slice(6, 11);
+            var archivePosts = rest.slice(11, 27);
+            var remainingPosts = rest.slice(27);
 
             var html = "";
-            var adKeys = ["1","2","3","4"];
-            var adIdx = 0;
-            var sections = window.I18N.t("sections") || [];
+            html += buildHero(hero);
 
-            for (var i = 0; i < sections.length; i++) {
-                var sStart = i * perSection;
-                var sPosts = pagePosts.slice(sStart, sStart + perSection);
-                html += renderSection(sections[i], sPosts);
-                if (i < sections.length - 1 && sPosts.length > 0) {
-                    html += renderAd(adKeys[adIdx % adKeys.length]);
-                    adIdx++;
-                }
+            // SECTION 01 — Today
+            if (todayPosts.length) {
+                html += renderSection({
+                    num: "01",
+                    label: window.I18N.tr("todayLabel"),
+                    tag: window.I18N.tr("todayTag"),
+                    type: "ed-grid"
+                }, todayPosts, buildEdCard);
+                html += renderAd("1");
             }
+
+            // SECTION 02 — Editor's Picks
+            if (editorPosts.length) {
+                html += renderSection({
+                    num: "02",
+                    label: window.I18N.tr("editorLabel"),
+                    tag: window.I18N.tr("editorTag"),
+                    type: "list-ed"
+                }, editorPosts, buildListItem);
+                html += renderAd("2");
+            }
+
+            // SECTION 03 — Archive (masonry)
+            if (archivePosts.length) {
+                html += renderSection({
+                    num: "03",
+                    label: window.I18N.tr("archiveLabel"),
+                    tag: window.I18N.tr("archiveTag"),
+                    type: "masonry"
+                }, archivePosts, buildMasonryItem);
+                html += renderAd("3");
+            }
+
+            // Remaining as editorial grid
+            if (remainingPosts.length) {
+                html += renderSection({
+                    num: "04",
+                    label: window.I18N.tr("todayLabel"),
+                    tag: "More from the vault",
+                    type: "ed-grid"
+                }, remainingPosts, buildEdCard);
+                html += renderAd("4");
+            }
+
             container.innerHTML = html;
 
+            // Execute any scripts
             container.querySelectorAll("script").forEach(function(oldScript){
                 var newScript = document.createElement("script");
                 if (oldScript.src) newScript.src = oldScript.src;
@@ -1166,10 +2022,11 @@ layout: null
                 oldScript.parentNode.replaceChild(newScript, oldScript);
             });
 
-            var baseName = window.__SITE_NAME__ || document.title.split(" · ")[0];
+            // Title
+            var baseName = window.__SITE_NAME__ || "Atikah";
             document.title = page === 1
-                ? baseName + " · Watch Free"
-                : baseName + " · Watch Free — Page " + page + " of " + totalPages;
+                ? baseName + " — The Vault · Curated Adult Stories"
+                : baseName + " — The Vault — Page " + page + " of " + totalPages;
 
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) canonical.setAttribute("href", pageURL(page));
@@ -1246,8 +2103,6 @@ layout: null
     (function(){
         var y = document.getElementById("footYear");
         if (y) y.textContent = new Date().getFullYear();
-        var fb = document.getElementById("footBrand");
-        if (fb && window.__SITE_NAME__) fb.textContent = window.__SITE_NAME__;
         document.querySelectorAll(".js-year").forEach(function(el){
             el.textContent = new Date().getFullYear();
         });
